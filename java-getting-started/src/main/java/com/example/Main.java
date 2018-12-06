@@ -51,6 +51,7 @@ public class Main {
            sequencia.add(f.fibo(i));
          }
          model.put("sequencia", sequencia);
+         
     return "fibo";
       }
   

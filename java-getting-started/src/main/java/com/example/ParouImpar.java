@@ -18,6 +18,7 @@ public class ParouImpar {
        
         System.out.println("É Par!");
         return n;
+        
     }
     
     else 
