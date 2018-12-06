@@ -17,6 +17,7 @@ public class TesteCalc {
     @Test         
     public void Teste1(){
     ParouImpar c = new ParouImpar();
+    
     assertEquals(1L, c.calc(1));
 } 
     

@@ -42,6 +42,7 @@ public class Main {
   @RequestMapping("/")
   String index() {
     return "index";
+    
   }
 
       @RequestMapping("/fibo")
