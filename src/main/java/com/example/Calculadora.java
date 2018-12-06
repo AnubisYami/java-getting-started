@@ -7,7 +7,7 @@ public class Calculadora{
   public  Calculadora(){
     
   }
-     public static Calc(int i){
+     public static Calc(){
 Scanner ent = new Scanner(System.ini);
    
       double num, soma = 0;

@@ -15,3 +15,4 @@ public class TesteCalc {
       else
         System.out.println("É impar!");
     }
+}
