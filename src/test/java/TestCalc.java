@@ -9,5 +9,9 @@ public class TesteCalc {
     @Test
     public void Teste1() {
         Calculadora c = new Calculadora();
-        assertEquals(1L,c.calc(1));
+        if(c % 2 == 0)
+          System.out.println("É par!");
+      
+      else
+        System.out.println("É impar!");
     }

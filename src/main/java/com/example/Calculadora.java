@@ -1,18 +1,26 @@
 package com.example;
+import java.util.Scanner;
+
 
 
 public class Calculadora{
-    public Calculadora(){
+  public class Calculadora(){
+     public static Calc(){
+Scanner ent = new Scanner(System.ini);
+   
+      double num, soma = 0;
+      int cont = 0;
 
+      do {
+        
+        System.out.println("Digite um numero");
+        num = ent.nextDouble();
+        
+        
+      }
     }
-  
-  public static calc(){
-  int X, Y, Soma;
-  
-  X =  1;
-  Y =  3;
-  
-  Soma = X + Y;
   }
-    }
+  
+
+   
 }

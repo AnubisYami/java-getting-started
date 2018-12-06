@@ -44,14 +44,20 @@ public class Main {
     return "index";
   }
 
-  @RequestMapping("/fibo")
-  String fibo(Map<String, Object> model) {
-     ArrayList<Long> sequencia = new ArrayList<Long>();
-     for (int i = 0; i < 30; i++) {
-       sequencia.add(f.fibo(i));
-     }
-     model.put("sequencia", sequencia);
-    return "fibo";
-  }
+//   @RequestMapping("/fibo")
+//   String fibo(Map<String, Object> model) {
+//      ArrayList<Long> sequencia = new ArrayList<Long>();
+//      for (int i = 0; i < 30; i++) {
+//        sequencia.add(f.fibo(i));
+//      }
+//      model.put("sequencia", sequencia);
+//     return "fibo";
+//   }
 
+  @RequestMapping("/calc")
+  String calc(Map<String, Object model) {
+  ArrayList<Long> resultado = new ArrayList<Long>();
+  model.put("resultado", resultado);
+  return "calc";
+}
 }
