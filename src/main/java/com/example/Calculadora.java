@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Calculadora{
   public class Calculadora(){
-     public static Calc(){
+     public static Calc(int i){
 Scanner ent = new Scanner(System.ini);
    
       double num, soma = 0;
