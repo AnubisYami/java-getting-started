@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 public class Calculadora{
-  public class Calculadora(){
+  public  Calculadora(){
      public static Calc(int i){
 Scanner ent = new Scanner(System.ini);
    
