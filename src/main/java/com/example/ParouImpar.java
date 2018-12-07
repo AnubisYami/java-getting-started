@@ -18,7 +18,7 @@ public class ParouImpar {
         return n;        
 
    else
-    return n;
+    return n - 1;
     }
     
 }
