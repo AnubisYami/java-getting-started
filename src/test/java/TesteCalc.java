@@ -19,7 +19,7 @@ public class TesteCalc {
     ParouImpar c = new ParouImpar();
     assertEquals(1L, c.calc(1));
 } 
-        @Test         
+    @Test         
     public void Teste2(){
     ParouImpar c = new ParouImpar();
     assertEquals(2L, c.calc(2));
