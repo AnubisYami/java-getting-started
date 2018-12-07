@@ -62,8 +62,8 @@ public class Main {
       String calc(Map<String, Object> model) {
          ArrayList<Long> sequencia = new ArrayList<Long>();
          for (int i = 0; i < 100; i++) {
-               for(int j = 1; j < 100; j+=2){
-         sequencia.add(c.parouimpar(i));
+               for(int j = 1; j < 50; j+=2){
+         sequencia.add(c.parouimpar(j));
                }
          }
          model.put("sequencia", sequencia); 
