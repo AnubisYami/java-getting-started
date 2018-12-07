@@ -61,8 +61,12 @@ public class Main {
       @RequestMapping("/parouimpar")
       String calc(Map<String, Object> model) {
          ArrayList<Long> sequencia = new ArrayList<Long>();
-         for (int i = 0; i < 30; i++) {
-           sequencia.add(c.parouimpar(i));
+         for (int i = 0; i < 100; i++) {
+          int num;
+          
+          num = i%2;
+          
+          sequencia.add(c.parouimpar(num));
          }
          model.put("sequencia", sequencia); 
     return "parouimpar";
