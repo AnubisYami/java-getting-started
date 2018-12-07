@@ -14,11 +14,11 @@ public class ParouImpar {
     }
     
     public static long parouimpar(long n){     
-    if(n%2 != 0)
-        return - 1;        
+    if(n%2 == 0)
+        return n;        
 
-    else
-    return n;
+   else
+    return 0;
     }
     
 }
