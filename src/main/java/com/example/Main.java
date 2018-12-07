@@ -65,8 +65,7 @@ public class Main {
          for (int i = 0; i < 30; i++) {
            sequencia.add(c.calc(i));
          }
-         model.put("sequencia", sequencia);
-         
+         model.put("sequencia", sequencia); 
     return "calc";
       }
   
