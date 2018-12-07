@@ -16,12 +16,12 @@ public class ParouImpar {
     public static long calc(int n){
     if(n % 2 == 0){
        
-        System.out.println("É Par!");
+        System.out.println("%d " + n + "É Par!");
         return n;        
     }
     
     else 
-            System.out.println("É impar");
+            System.out.println("%d " + n + "É impar");
     return n;
     }
     
