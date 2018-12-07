@@ -59,29 +59,29 @@ public class Main {
  
 
 
-      @RequestMapping("/fibo")
+      @RequestMapping("/calc")
       String fibo(Map<String, Object> model) {
          ArrayList<Long> sequencia = new ArrayList<Long>();
          for (int i = 0; i < 30; i++) {
-           sequencia.add(f.fibo(i));
+           sequencia.add(c.calc(i));
          }
          model.put("sequencia", sequencia);
          
-    return "fibo";
+    return "calc";
       }
   
     
-  @RequestMapping("/calc")
-    String calc (Map<String, Object> model){
-    
-        int n;
-        n = 3;
-        ArrayList<Long> list = new ArrayList<Long>();
-            list.add(c.calc(n));
-           model.put("list", list);
-      return "calc";
-    
-    }
+//  @RequestMapping("/calc")
+//    String calc (Map<String, Object> model){
+//    
+//        int n;
+//        n = 3;
+//        ArrayList<Long> list = new ArrayList<Long>();
+//            list.add(c.calc(n));
+//           model.put("list", list);
+//      return "calc";
+//    
+//    }
     
   }
 
