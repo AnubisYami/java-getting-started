@@ -63,20 +63,10 @@ public class Main {
          ArrayList<Long> sequencia = new ArrayList<Long>();
          for (int i = 0; i < 30; i++) {
            sequencia.add(c.parouimpar(i));
-         
-           
-          if(i%2 == 0){
-        System.out.print("%d " + i + "É Par!");
-              
-    }
-    
-    else 
-            System.out.print("%d " + i+ "É impar");
-    
          }
          model.put("sequencia", sequencia); 
     return "parouimpar";
       }
-}
   
+  }
 

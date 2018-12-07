@@ -27,13 +27,13 @@ public class TesteCalc {
     @Test
     public void Teste3() {
         ParouImpar c = new ParouImpar();
-        assertEquals(2L, c.parouimpar(3));
+        assertEquals(3L, c.parouimpar(3));
     }
     
     @Test         
     public void Teste4(){
     ParouImpar c = new ParouImpar();
-    assertEquals(2L, c.parouimpar(2));
+    assertEquals(4L, c.parouimpar(4));
 } 
     
     
