@@ -16,7 +16,6 @@
 
 package com.example;
 
-;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -34,6 +33,7 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  private ParouImpar c = new ParouImpar();
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
@@ -42,7 +42,9 @@ public class Main {
   @RequestMapping("/")
   String index() {
     return "index";
+    
   }
+
 
 //   @RequestMapping("/fibo")
 //   String fibo(Map<String, Object> model) {
@@ -54,10 +56,32 @@ public class Main {
 //     return "fibo";
 //   }
 
+ 
+
+
+      @RequestMapping("/fibo")
+      String fibo(Map<String, Object> model) {
+         ArrayList<Long> sequencia = new ArrayList<Long>();
+         for (int i = 0; i < 30; i++) {
+           sequencia.add(f.fibo(i));
+         }
+         model.put("sequencia", sequencia);
+         
+    return "fibo";
+      }
+  
+    
   @RequestMapping("/calc")
-  String calc(Map<String, Object model) {
-  ArrayList<Long> resultado = new ArrayList<Long>();
-  model.put("resultado", resultado);
-  return "calc";
-}
-}
+    String calc (Map<String, Object> model){
+    
+        int n;
+        n = 3;
+        ArrayList<Long> list = new ArrayList<Long>();
+            list.add(c.calc(n));
+           model.put("list", list);
+      return "calc";
+    
+    }
+    
+  }
+
