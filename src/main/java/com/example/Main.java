@@ -31,8 +31,7 @@ import java.util.Map;
 @Controller
 @SpringBootApplication
 public class Main {
-
-  private Fibonacci f = new Fibonacci();
+    
   private ParouImpar c = new ParouImpar();
 
   public static void main(String[] args) throws Exception {
@@ -46,27 +45,27 @@ public class Main {
   }
 
 
-   @RequestMapping("/fibo")
-   String fibo(Map<String, Object> model) {
-      ArrayList<Long> sequencia = new ArrayList<Long>();
-      for (int i = 0; i < 30; i++) {
-        sequencia.add(f.fibo(i));
-      }
-      model.put("sequencia", sequencia);
-     return "fibo";
-   }
+//   @RequestMapping("/fibo")
+//   String fibo(Map<String, Object> model) {
+//      ArrayList<Long> sequencia = new ArrayList<Long>();
+//      for (int i = 0; i < 30; i++) {
+//        sequencia.add(f.fibo(i));
+//      }
+//      model.put("sequencia", sequencia);
+//     return "fibo";
+//   }
 
  
 
 
-      @RequestMapping("/calc")
+      @RequestMapping("/parouimpar")
       String calc(Map<String, Object> model) {
          ArrayList<Long> sequencia = new ArrayList<Long>();
          for (int i = 0; i < 30; i++) {
            sequencia.add(c.calc(i));
          }
          model.put("sequencia", sequencia); 
-    return "calc";
+    return "parouimpar";
       }
   
   }
