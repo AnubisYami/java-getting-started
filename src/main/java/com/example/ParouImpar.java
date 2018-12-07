@@ -13,15 +13,15 @@ public class ParouImpar {
     public ParouImpar(){
     }
     
-    public static long calc(int n){
+    public static long parouimpar(int n){
+        
     if(n % 2 == 0){
-       
-        System.out.println("%d " + n + "É Par!");
+        System.out.print("%d " + n + "É Par!");
         return n;        
     }
     
     else 
-            System.out.println("%d " + n + "É impar");
+            System.out.print("%d " + n + "É impar");
     return n;
     }
     

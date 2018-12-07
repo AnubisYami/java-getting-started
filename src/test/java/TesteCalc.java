@@ -17,12 +17,12 @@ public class TesteCalc {
     @Test         
     public void Teste1(){
     ParouImpar c = new ParouImpar();
-    assertEquals(1L, c.calc(1));
+    assertEquals(1L, c.parouimpar(1));
 } 
     @Test         
     public void Teste2(){
     ParouImpar c = new ParouImpar();
-    assertEquals(2L, c.calc(2));
+    assertEquals(2L, c.parouimpar(2));
 } 
     
     
