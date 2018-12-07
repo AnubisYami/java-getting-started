@@ -24,6 +24,17 @@ public class TesteCalc {
     ParouImpar c = new ParouImpar();
     assertEquals(2L, c.parouimpar(2));
 } 
+    @Test
+    public void Teste3() {
+        ParouImpar c = new ParouImpar();
+        assertEquals(2L, c.parouimpar(3));
+    }
+    
+    @Test         
+    public void Teste4(){
+    ParouImpar c = new ParouImpar();
+    assertEquals(2L, c.parouimpar(2));
+} 
     
     
     

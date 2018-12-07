@@ -15,7 +15,7 @@ public class ParouImpar {
     
     public static long parouimpar(int n){
         
-    if(n % 2 == 0){
+    if(n%2 == 0){
         System.out.print("%d " + n + "É Par!");
         return n;        
     }
